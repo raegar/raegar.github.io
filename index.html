@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #666;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #444;
+            border-bottom: 2px solid #666;
+            padding-bottom: 0.5rem;
+        }
+        .audio-clips, .documentation, .game-artefacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .audio-clips audio, .documentation a, .game-artefacts a {
+            margin: 1rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#audio-clips">Audio Clips</a>
+            <a href="#documentation">Documentation</a>
+            <a href="#game-artefacts">Game Artefacts</a>
+        </nav>
+    </header>
+
+    <section id="audio-clips">
+        <h2>Audio Clips</h2>
+        <div class="audio-clips">
+            <p>
+                <strong>Clip 1:</strong><br>
+                <audio controls>
+                    <source src="audio/clip1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+            <p>
+                <strong>Clip 2:</strong><br>
+                <audio controls>
+                    <source src="audio/clip2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </p>
+        </div>
+    </section>
+
+    <section id="documentation">
+        <h2>Documentation</h2>
+        <div class="documentation">
+            <p><a href="docs/doc1.pdf" target="_blank">Research Document 1</a></p>
+            <p><a href="docs/doc2.pdf" target="_blank">Research Document 2</a></p>
+        </div>
+    </section>
+
+    <section id="game-artefacts">
+        <h2>Game Artefacts</h2>
+        <div class="game-artefacts">
+            <p><a href="artefacts/game1.html" target="_blank">Game Prototype 1</a></p>
+            <p><a href="artefacts/game2.html" target="_blank">Game Prototype 2</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio | Created with ❤️</p>
+    </footer>
+</body>
+</html>
