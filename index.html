@@ -51,13 +51,21 @@
             border-bottom: 2px solid #666;
             padding-bottom: 0.5rem;
         }
-        .audio-clips, .documentation, .game-artefacts {
+        .image-gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
+            justify-content: center;
         }
-        .audio-clips audio, .documentation a, .game-artefacts a {
-            margin: 1rem 0;
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery .image-container {
+            max-width: 300px;
+            text-align: center;
         }
         footer {
             text-align: center;
@@ -75,6 +83,7 @@
             <a href="#audio-clips">Audio Clips</a>
             <a href="#documentation">Documentation</a>
             <a href="#game-artefacts">Game Artefacts</a>
+            <a href="#fmod-effect-chains">FMOD Effect Chains</a>
         </nav>
     </header>
 
@@ -88,13 +97,6 @@
                     Your browser does not support the audio element.
                 </audio>
             </p>
-            <p>
-                <strong>Clip 2:</strong><br>
-                <audio controls>
-                    <source src="audio/clip2.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </p>
         </div>
     </section>
 
@@ -102,7 +104,6 @@
         <h2>Documentation</h2>
         <div class="documentation">
             <p><a href="docs/doc1.pdf" target="_blank">Research Document 1</a></p>
-            <p><a href="docs/doc2.pdf" target="_blank">Research Document 2</a></p>
         </div>
     </section>
 
@@ -110,7 +111,20 @@
         <h2>Game Artefacts</h2>
         <div class="game-artefacts">
             <p><a href="artefacts/game1.html" target="_blank">Game Prototype 1</a></p>
-            <p><a href="artefacts/game2.html" target="_blank">Game Prototype 2</a></p>
+        </div>
+    </section>
+
+    <section id="fmod-effect-chains">
+        <h2>FMOD Effect Chains</h2>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="images/effect-chain1.png" alt="FMOD Effect Chain 1">
+                <p>Effect Chain 1</p>
+            </div>
+            <div class="image-container">
+                <img src="images/effect-chain2.png" alt="FMOD Effect Chain 2">
+                <p>Effect Chain 2</p>
+            </div>
         </div>
     </section>
 
